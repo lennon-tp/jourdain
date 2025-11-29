@@ -1,0 +1,81 @@
+# Gradle files
+.gradle/
+build/
+**/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS files
+*.log
+*.swp
+*.DS_Store
+*.idea/workspace.xml
+*.idea/tasks.xml
+*.idea/gradle.xml
+*.idea/libraries
+*.idea/modules.xml
+*.idea/caches/
+.idea/misc.xml
+
+# Avoid ignoring the entire .idea folder
+!/.idea/codeStyles
+!/.idea/runConfigurations
+
+# Android Studio captures
+captures/
+
+# Generated files
+bin/
+gen/
+out/
+
+# Keystores (IMPORTANT: do not commit signing keys)
+*.jks
+*.keystore
+
+# Java/Kotlin stuff
+*.class
+*.iml
+
+# Gradle wrapper
+gradle-app.setting
+
+# Build outputs
+app/build/
+*/build/
+
+# NDK
+obj/
+
+# IntelliJ
+*.iws
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Firebase Crashlytics
+crashlytics-build.properties
+
+# APK/Bundle files
+*.apk
+*.ap_
+*.aab
+
+# Jetifier
+.jetifier-cache/
+
+# Lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# Compose previews
+*.skiko
+
+# Kotlin build cache
+.kotlin/
