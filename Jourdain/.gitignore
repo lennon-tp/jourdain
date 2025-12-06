@@ -1,15 +1,63 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle-wrapper.jar
+
+# Local configuration
 local.properties
+*.iml
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+.idea/
+*.ipr
+*.iws
+
+# Generated files
+gen/
+out/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keystore (IMPORTANT : ne jamais commit la clé)
+*.jks
+*.keystore
+
+# Cache
+.cache/
+*.class
+
+# APK / AAB
+*.apk
+*.ap_
+*.aab
+
+# IntelliJ/JetBrains
+.idea/
+*.iml
+*.iws
+
+# Gradle caches
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# NDK
+obj/
+
+# Artifacts
+*.o
+*.obj
+*.so
+*.dex
+
+# Android Profiling
+*.hprof
