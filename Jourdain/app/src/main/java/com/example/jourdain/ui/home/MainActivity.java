@@ -1,7 +1,9 @@
 package com.example.jourdain.ui.home;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.os.Handler;
@@ -77,6 +79,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 5000);
     }
+
+    public void openFacebook(View v) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.facebook.com/profile.php?id=61560971694695"));
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onDestroy() {
