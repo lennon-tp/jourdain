@@ -41,10 +41,10 @@ public class AudioPlayerActivity extends AppCompatActivity {
         btnPlayPause.setOnClickListener(v -> {
             if (mediaPlayer.isPlaying()) {
                 mediaPlayer.pause();
-                btnPlayPause.setText("Play");
+                btnPlayPause.setText("PLAY");
             } else {
                 mediaPlayer.start();
-                btnPlayPause.setText("Pause");
+                btnPlayPause.setText("STOP");
             }
         });
 

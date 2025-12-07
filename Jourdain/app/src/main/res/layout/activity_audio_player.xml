@@ -23,6 +23,7 @@
 
     <Button
         android:id="@+id/btnPlayPause"
+        android:backgroundTint="#1877F2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play"/>
