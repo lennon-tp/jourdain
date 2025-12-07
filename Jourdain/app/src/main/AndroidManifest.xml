@@ -33,7 +33,7 @@
         <activity android:name=".ui.audio.AudioListActivity" />
 
         <!-- Audio Player -->
-        <activity android:name=".ui.player.AudioPlayerActivity" />
+        <activity android:name=".ui.audio.AudioPlayerActivity" />
 
     </application>
 
