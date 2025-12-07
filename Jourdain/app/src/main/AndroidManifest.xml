@@ -16,12 +16,14 @@
         <!-- Splash Screen -->
         <activity
             android:name=".ui.splash.SplashActivity"
-            android:theme="@style/Theme.Jourdain.NoActionBar">
+            android:theme="@style/Theme.Jourdain.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <!-- Main Activity -->
         <activity android:name=".ui.home.MainActivity" />

@@ -1,4 +1,5 @@
 package com.example.jourdain.ui.pdfviewer;
+import com.example.jourdain.R;
 
 import android.os.Bundle;
 import android.widget.SeekBar;
