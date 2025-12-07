@@ -2,7 +2,6 @@ package com.example.jourdain.ui.home;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -30,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
         // Clic sur Cantique -> PdfActivity avec paramètre
         btnCantique.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, PdfActivity.class);
-            intent.putExtra("pdf_file", "cantique.pdf");
+            intent.putExtra("pdfName", "cantique.pdf"); // correspond à PdfActivity
             startActivity(intent);
         });
 
         // Clic sur Livret -> PdfActivity avec paramètre
         btnLivret.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, PdfActivity.class);
-            intent.putExtra("pdf_file", "livret.pdf");
+            intent.putExtra("pdfName", "livret.pdf"); // correspond à PdfActivity
             startActivity(intent);
         });
 
