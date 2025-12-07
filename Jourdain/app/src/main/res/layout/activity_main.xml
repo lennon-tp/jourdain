@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-    ```
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -12,11 +11,37 @@
         android:gravity="center_horizontal"
         android:padding="16dp">
 
-        <!-- Cantique -->
+
+        <!-- ===== HEADER IMAGE ===== -->
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header_image1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Header" />
+
+        <!-- ===== HEADER TEXT ===== -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue sur l'application officielle de la paroisse de Jourdain"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp" />
+
+
+        <!-- ===== CANTIQUE ===== -->
         <ImageView
             android:id="@+id/btnCantique"
             android:layout_width="200dp"
-            android:layout_height="300dp"
+            android:layout_height="280dp"
             android:src="@drawable/cantique_cover"
             android:scaleType="fitCenter"
             android:contentDescription="Cantique" />
@@ -30,11 +55,12 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="24dp" />
 
-        <!-- Livret -->
+
+        <!-- ===== LIVRET ===== -->
         <ImageView
             android:id="@+id/btnLivret"
             android:layout_width="200dp"
-            android:layout_height="300dp"
+            android:layout_height="280dp"
             android:src="@drawable/livret_cover"
             android:scaleType="fitCenter"
             android:contentDescription="Livret" />
@@ -48,18 +74,48 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="32dp" />
 
-        <!-- Bouton Audio -->
+
+        <!-- ===== BOUTON AUDIO ===== -->
         <Button
             android:id="@+id/btnAudio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Audio"
-            android:paddingLeft="24dp"
-            android:paddingRight="24dp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp" />
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:paddingLeft="28dp"
+            android:paddingRight="28dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="40dp" />
+
+
+        <!-- ===== FOOTER ===== -->
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2025 Paroisse de Jourdain"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+
+        <!-- Lien Facebook -->
+        <TextView
+            android:id="@+id/facebookLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suivez-nous sur Facebook"
+            android:textColor="#1877F2"
+            android:textSize="16sp"
+            android:autoLink="web"
+            android:paddingBottom="24dp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:textStyle="bold"
+            android:onClick="openFacebook" />
 
     </LinearLayout>
-    ```
 
 </ScrollView>
